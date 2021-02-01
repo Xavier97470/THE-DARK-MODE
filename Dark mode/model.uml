@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LdiLgGSwEeuc1q8a_ka1hQ" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_sOiJIGTAEeuCd-K6t4C2mw" name="idClipModel" visibility="public">
+    <ownedComment xmi:id="_wy1awGTAEeuCd-K6t4C2mw" annotatedElement="_sOiJIGTAEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Clip.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_JSk6kGTWEeuCd-K6t4C2mw" name="enabled"/>
+    <ownedAttribute xmi:id="_JccBMGTWEeuCd-K6t4C2mw" name="entity"/>
+    <ownedAttribute xmi:id="_Jg7foGTWEeuCd-K6t4C2mw" name="id"/>
+    <ownedAttribute xmi:id="_JlWsoGTWEeuCd-K6t4C2mw" name="owner"/>
+    <ownedAttribute xmi:id="_JouJsGTWEeuCd-K6t4C2mw" name="origin"/>
+    <ownedOperation xmi:id="_X8wwsGTOEeuCd-K6t4C2mw" name="Init">
+      <ownedParameter xmi:id="_k-WXsGTOEeuCd-K6t4C2mw" name="void"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bza5MGTOEeuCd-K6t4C2mw" name="Link_r">
+      <ownedParameter xmi:id="_sw6VEGTOEeuCd-K6t4C2mw" name="struct clipSector_s *node"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LZp1cGTOEeuCd-K6t4C2mw" name="AllocTraceModel">
+      <ownedParameter xmi:id="_hn71gGTOEeuCd-K6t4C2mw" name="const idTraceModel &amp;trm"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="__ka3YGTOEeuCd-K6t4C2mw" name="FreeTraceModel">
+      <ownedParameter xmi:id="_Ch4uEGTPEeuCd-K6t4C2mw" name="const int traceModelIndex"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_E0hfEGTPEeuCd-K6t4C2mw" name="GetCachedTraceModel">
+      <ownedParameter xmi:id="_HLkO8GTPEeuCd-K6t4C2mw" name="int traceModelIndex"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FvpL4GTBEeuCd-K6t4C2mw" name="idEntity" visibility="public">
+    <ownedComment xmi:id="_WEbzkGTCEeuCd-K6t4C2mw" annotatedElement="_FvpL4GTBEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Force.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_j4_1AGTVEeuCd-K6t4C2mw" name="forceList"/>
+    <ownedOperation xmi:id="_OCC-kGTPEeuCd-K6t4C2mw" name="DeletePhysics">
+      <ownedParameter xmi:id="_o5JVIGTVEeuCd-K6t4C2mw" name="const idPhysics *phys"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_l84_YGTVEeuCd-K6t4C2mw" name="ClearForceList">
+      <ownedParameter xmi:id="_wkiTgGTVEeuCd-K6t4C2mw" name="void"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_mIX2oGTVEeuCd-K6t4C2mw" name="Evaluate">
+      <ownedParameter xmi:id="_0leZYGTVEeuCd-K6t4C2mw" name="int time"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_mTObwGTVEeuCd-K6t4C2mw" name="RemovePhysics">
+      <ownedParameter xmi:id="_4k6DYGTVEeuCd-K6t4C2mw" name="const idPhysics *phys"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cA8qwGTBEeuCd-K6t4C2mw" name="idPhysics" visibility="public">
+    <ownedComment xmi:id="_C6wM8GTCEeuCd-K6t4C2mw" annotatedElement="_cA8qwGTBEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Force.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_sT298GTUEeuCd-K6t4C2mw" name="forceList"/>
+    <ownedOperation xmi:id="_X-TzYGTPEeuCd-K6t4C2mw" name="~idForce">
+      <ownedParameter xmi:id="_0hixEGTUEeuCd-K6t4C2mw" name="void"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2FSbwGTUEeuCd-K6t4C2mw" name="DeletePhysics">
+      <ownedParameter xmi:id="_4995EGTUEeuCd-K6t4C2mw" name="const idPhysics *phys"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2WGe8GTUEeuCd-K6t4C2mw" name="ClearForList">
+      <ownedParameter xmi:id="_Ic_y4GTVEeuCd-K6t4C2mw" name="void"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2qkTEGTUEeuCd-K6t4C2mw" name="RemovePhysics">
+      <ownedParameter xmi:id="_KxtAcGTVEeuCd-K6t4C2mw" name="const idPhysics *phys"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dAdKgGTCEeuCd-K6t4C2mw" name="idForce" visibility="public">
+    <ownedComment xmi:id="_kqgsIGTCEeuCd-K6t4C2mw" annotatedElement="_dAdKgGTCEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Force.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_XPUNIGTUEeuCd-K6t4C2mw" name="forceList"/>
+    <ownedOperation xmi:id="_auOWQGTPEeuCd-K6t4C2mw" name="~idForce">
+      <ownedParameter xmi:id="_Z4kuYGTUEeuCd-K6t4C2mw" name="void"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_dB9hMGTUEeuCd-K6t4C2mw" name="DeletePhysics">
+      <ownedParameter xmi:id="_egUVkGTUEeuCd-K6t4C2mw" name="const idPhysics *phys"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_dQrSoGTUEeuCd-K6t4C2mw" name="ClearForceList">
+      <ownedParameter xmi:id="_khWD4GTUEeuCd-K6t4C2mw" name="void"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_dbmJMGTUEeuCd-K6t4C2mw" name="RemovePhysics">
+      <ownedParameter xmi:id="_ocaLQGTUEeuCd-K6t4C2mw" name="const idPhysics *phys"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2ylr0GTCEeuCd-K6t4C2mw" name="idForce_Constant" visibility="public">
+    <ownedComment xmi:id="_ZZa88GTDEeuCd-K6t4C2mw" annotatedElement="_2ylr0GTCEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Force_Constant.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_sgNG8GTLEeuCd-K6t4C2mw" name="Save"/>
+    <ownedAttribute xmi:id="_uYdCAGTLEeuCd-K6t4C2mw" name="Restore"/>
+    <ownedAttribute xmi:id="_wNTq0GTLEeuCd-K6t4C2mw" name="SetForce"/>
+    <ownedAttribute xmi:id="_x9qOIGTLEeuCd-K6t4C2mw" name="SetPosition"/>
+    <ownedAttribute xmi:id="_CAmtUGTMEeuCd-K6t4C2mw" name="SetPhysics"/>
+    <ownedAttribute xmi:id="_48_eIGTTEeuCd-K6t4C2mw"/>
+    <ownedAttribute xmi:id="_5Gq-kGTTEeuCd-K6t4C2mw" name="force"/>
+    <ownedAttribute xmi:id="_5KnqcGTTEeuCd-K6t4C2mw" name="physics"/>
+    <ownedAttribute xmi:id="_5ONxAGTTEeuCd-K6t4C2mw" name="point"/>
+    <ownedOperation xmi:id="_8ED8wGTTEeuCd-K6t4C2mw" name="Save">
+      <ownedParameter xmi:id="_-PbBEGTTEeuCd-K6t4C2mw" name="idSaveGame *savefile"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_8R6LgGTTEeuCd-K6t4C2mw" name="Restore">
+      <ownedParameter xmi:id="_GUr4AGTUEeuCd-K6t4C2mw" name="idRestoreGame *savefile"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_87laoGTTEeuCd-K6t4C2mw" name="SetForce">
+      <ownedParameter xmi:id="_JToVYGTUEeuCd-K6t4C2mw" name="const idVec3 &amp;force"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_9GylEGTTEeuCd-K6t4C2mw" name="SetPosition">
+      <ownedParameter xmi:id="_MOTWwGTUEeuCd-K6t4C2mw" name="idPhysics *physics, int id, const idVec3 &amp;point"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_9R0JUGTTEeuCd-K6t4C2mw" name="SetPhysics">
+      <ownedParameter xmi:id="_PWiTAGTUEeuCd-K6t4C2mw" name="idPhysics *physics"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5jefEGTCEeuCd-K6t4C2mw" name="idForce_Drag" visibility="public">
+    <ownedComment xmi:id="_eNS7oGTDEeuCd-K6t4C2mw" annotatedElement="_5jefEGTCEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Force_Drag.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_e4Tb8GTNEeuCd-K6t4C2mw" name="Init"/>
+    <ownedAttribute xmi:id="_e84Z8GTNEeuCd-K6t4C2mw" name="SetPhysics"/>
+    <ownedAttribute xmi:id="_e_fpEGTNEeuCd-K6t4C2mw" name="SetDragPosition"/>
+    <ownedAttribute xmi:id="_fBWDMGTNEeuCd-K6t4C2mw" name="GetDragPosition"/>
+    <ownedAttribute xmi:id="_fC8lsGTNEeuCd-K6t4C2mw" name="GetDraggedPosition"/>
+    <ownedOperation xmi:id="_ooxeMGTSEeuCd-K6t4C2mw" name="Init">
+      <ownedParameter xmi:id="_yE2XEGTSEeuCd-K6t4C2mw" name="float damping"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_o0Br8GTSEeuCd-K6t4C2mw" name="SetPhysics">
+      <ownedParameter xmi:id="_1arqcGTSEeuCd-K6t4C2mw" name="idPhysics *physics, int id, const idVec3 &amp;p"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_o_tXgGTSEeuCd-K6t4C2mw" name="SetDragPosition">
+      <ownedParameter xmi:id="_5tkb8GTSEeuCd-K6t4C2mw" name="const idVec3 &amp;pos"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_pJ-GwGTSEeuCd-K6t4C2mw" name="GetDragPosition">
+      <ownedParameter xmi:id="_8t_gAGTSEeuCd-K6t4C2mw" name="void"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_pUJ9gGTSEeuCd-K6t4C2mw" name="GetDraggedPosition">
+      <ownedParameter xmi:id="__x25oGTSEeuCd-K6t4C2mw" name="void"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8xxnEGTCEeuCd-K6t4C2mw" name="idForce_Field" visibility="public">
+    <ownedComment xmi:id="_jh_IYGTDEeuCd-K6t4C2mw" annotatedElement="_8xxnEGTCEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Force_Field.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_QKMaAGTTEeuCd-K6t4C2mw" name="type"/>
+    <ownedAttribute xmi:id="_QSKqQGTTEeuCd-K6t4C2mw" name="applyType"/>
+    <ownedAttribute xmi:id="_QWUKcGTTEeuCd-K6t4C2mw" name="magnitude"/>
+    <ownedAttribute xmi:id="_QaMk4GTTEeuCd-K6t4C2mw" name="dir"/>
+    <ownedAttribute xmi:id="_QeU28GTTEeuCd-K6t4C2mw" name="randomTorque"/>
+    <ownedOperation xmi:id="_e8ZDAGTTEeuCd-K6t4C2mw" name="Uniform">
+      <ownedParameter xmi:id="_imjAkGTTEeuCd-K6t4C2mw" name="const idVec3 &amp;force "/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fH_2EGTTEeuCd-K6t4C2mw" name="Explosion">
+      <ownedParameter xmi:id="_lMknoGTTEeuCd-K6t4C2mw" name="float force"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fRlP4GTTEeuCd-K6t4C2mw" name="Implosion">
+      <ownedParameter xmi:id="_oLG1UGTTEeuCd-K6t4C2mw" name="float force"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fb1_IGTTEeuCd-K6t4C2mw" name="RandomTorque">
+      <ownedParameter xmi:id="_rNuRwGTTEeuCd-K6t4C2mw" name="float force"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fljUwGTTEeuCd-K6t4C2mw" name="SetPlayerOnly">
+      <ownedParameter xmi:id="_uStswGTTEeuCd-K6t4C2mw" name="bool set"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-EaToGTCEeuCd-K6t4C2mw" name="idPhysics_Base" visibility="public">
+    <ownedComment xmi:id="_o_xmwGTDEeuCd-K6t4C2mw" annotatedElement="_-EaToGTCEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Physics_Base.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_dHhTcGTQEeuCd-K6t4C2mw" name="self"/>
+    <ownedAttribute xmi:id="_eosLQGTQEeuCd-K6t4C2mw" name="clipMask"/>
+    <ownedAttribute xmi:id="_gMuJ0GTQEeuCd-K6t4C2mw" name="gravityVector"/>
+    <ownedAttribute xmi:id="_hgk-YGTQEeuCd-K6t4C2mw" name="gravityNormal"/>
+    <ownedAttribute xmi:id="_jtHHYGTQEeuCd-K6t4C2mw" name="contacts"/>
+    <ownedOperation xmi:id="_kvtz4GTQEeuCd-K6t4C2mw" name="SetSelf">
+      <ownedParameter xmi:id="_ojGl8GTQEeuCd-K6t4C2mw" name="idEntity *e"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_p5ETUGTQEeuCd-K6t4C2mw" name="GetNumClipModels">
+      <ownedParameter xmi:id="_tPh40GTQEeuCd-K6t4C2mw" name="void"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_qEYLcGTQEeuCd-K6t4C2mw" name="SetMass">
+      <ownedParameter xmi:id="_wbznkGTQEeuCd-K6t4C2mw" name="float mass, int id = -1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_qPJ4EGTQEeuCd-K6t4C2mw" name="SetContents">
+      <ownedParameter xmi:id="_0d_qoGTQEeuCd-K6t4C2mw" name="int contents, int id = -1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_qZsUIGTQEeuCd-K6t4C2mw" name="SetClipMask">
+      <ownedParameter xmi:id="_3n0iUGTQEeuCd-K6t4C2mw" name="int mask, int id = -1"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__GzkwGTCEeuCd-K6t4C2mw" name="CForcePush" visibility="public">
+    <ownedComment xmi:id="_ye3XYGTDEeuCd-K6t4C2mw" annotatedElement="__GzkwGTCEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Force_Push.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_DbPQkGTSEeuCd-K6t4C2mw" name="pushEnt"/>
+    <ownedAttribute xmi:id="_De62sGTSEeuCd-K6t4C2mw" name="lastPushEnt"/>
+    <ownedAttribute xmi:id="_Di-QQGTSEeuCd-K6t4C2mw" name="id"/>
+    <ownedAttribute xmi:id="_Dm0OcGTSEeuCd-K6t4C2mw" name="contactInfo"/>
+    <ownedAttribute xmi:id="_FdQysGTSEeuCd-K6t4C2mw" name="impactVelocity"/>
+    <ownedOperation xmi:id="_EAO0AGTSEeuCd-K6t4C2mw" name="SetOwner">
+      <ownedParameter xmi:id="_PPapQGTSEeuCd-K6t4C2mw" name="idEntity* ownerEnt"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_EMqGcGTSEeuCd-K6t4C2mw" name="SetPushEntity">
+      <ownedParameter xmi:id="_UWIrcGTSEeuCd-K6t4C2mw" name="idEntity* pushEnt, int id = -1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_EX1bsGTSEeuCd-K6t4C2mw" name="SetContactInfo">
+      <ownedParameter xmi:id="_Y2q3YGTSEeuCd-K6t4C2mw" name="const trace_t&amp; contactInfo, const idVec3&amp; impactVelocity"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_EiJOQGTSEeuCd-K6t4C2mw" name="Save">
+      <ownedParameter xmi:id="_cLLVEGTSEeuCd-K6t4C2mw" name="idSaveGame *savefile"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Esdn4GTSEeuCd-K6t4C2mw" name="Restore">
+      <ownedParameter xmi:id="_e_gd4GTSEeuCd-K6t4C2mw" name="idRestoreGame *savefile"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AbOaAGTDEeuCd-K6t4C2mw" name="idPhysics_Player" visibility="public">
+    <ownedComment xmi:id="__ty20GTDEeuCd-K6t4C2mw" annotatedElement="_AbOaAGTDEeuCd-K6t4C2mw">
+      <body>https://github.com/mdeguzis/tdm/blob/master/game/physics/Physics_Player.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_4hvXcGTREeuCd-K6t4C2mw" name="walkSpeed"/>
+    <ownedAttribute xmi:id="_52fj4GTREeuCd-K6t4C2mw" name="crouchSpeed"/>
+    <ownedAttribute xmi:id="_58EAYGTREeuCd-K6t4C2mw" name="maxStepHeight"/>
+    <ownedAttribute xmi:id="_6HwTAGTREeuCd-K6t4C2mw" name="maxJumpHeight"/>
+    <ownedAttribute xmi:id="_6LotcGTREeuCd-K6t4C2mw" name="debugLevel"/>
+    <ownedOperation xmi:id="_kVuxIGTREeuCd-K6t4C2mw" name="Save">
+      <ownedParameter xmi:id="_lSCoYGTREeuCd-K6t4C2mw" name="idSaveGame *savefile"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_nRPgAGTREeuCd-K6t4C2mw" name="Restore">
+      <ownedParameter xmi:id="_psqZkGTREeuCd-K6t4C2mw" name="idRestoreGame *savefile"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_nehuEGTREeuCd-K6t4C2mw" name="SetSpeed">
+      <ownedParameter xmi:id="_tMfWcGTREeuCd-K6t4C2mw" name="const float newWalkSpeed, const float newCrouchSpeed"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_nsMWoGTREeuCd-K6t4C2mw" name="SetMaxStepHeight">
+      <ownedParameter xmi:id="_wT82oGTREeuCd-K6t4C2mw" name="const float newMaxStepHeight"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_n7IxkGTREeuCd-K6t4C2mw" name="SetMovementType">
+      <ownedParameter xmi:id="_0mu6cGTREeuCd-K6t4C2mw" name="const pmtype_t type"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ROwMIGTEEeuCd-K6t4C2mw" memberEnd="_ROwMIWTEEeuCd-K6t4C2mw _ROwMJGTEEeuCd-K6t4C2mw" navigableOwnedEnd="_ROwMIWTEEeuCd-K6t4C2mw _ROwMJGTEEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_ROwMIWTEEeuCd-K6t4C2mw" name="idEntitys" type="_FvpL4GTBEeuCd-K6t4C2mw" association="_ROwMIGTEEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ROwMImTEEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ROwMI2TEEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_ROwMJGTEEeuCd-K6t4C2mw" name="idClipModels" type="_sOiJIGTAEeuCd-K6t4C2mw" association="_ROwMIGTEEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ROwMJWTEEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ROwMJmTEEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_e-3tEGTEEeuCd-K6t4C2mw" memberEnd="_e-3tEWTEEeuCd-K6t4C2mw _e-3tFGTEEeuCd-K6t4C2mw" navigableOwnedEnd="_e-3tEWTEEeuCd-K6t4C2mw _e-3tFGTEEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_e-3tEWTEEeuCd-K6t4C2mw" name="idPhysicss" type="_cA8qwGTBEeuCd-K6t4C2mw" association="_e-3tEGTEEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e-3tEmTEEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e-3tE2TEEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_e-3tFGTEEeuCd-K6t4C2mw" name="idEntitys" type="_FvpL4GTBEeuCd-K6t4C2mw" association="_e-3tEGTEEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e-3tFWTEEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e-3tFmTEEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_68J3UGTEEeuCd-K6t4C2mw" memberEnd="_68J3UWTEEeuCd-K6t4C2mw _68J3VGTEEeuCd-K6t4C2mw" navigableOwnedEnd="_68J3UWTEEeuCd-K6t4C2mw _68J3VGTEEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_68J3UWTEEeuCd-K6t4C2mw" name="idPhysicss" type="_cA8qwGTBEeuCd-K6t4C2mw" association="_68J3UGTEEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_68J3UmTEEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_68J3U2TEEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_68J3VGTEEeuCd-K6t4C2mw" name="idForces" type="_dAdKgGTCEeuCd-K6t4C2mw" association="_68J3UGTEEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_68J3VWTEEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_68J3VmTEEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8evrcGTEEeuCd-K6t4C2mw" memberEnd="_8evrcWTEEeuCd-K6t4C2mw _8evrdGTEEeuCd-K6t4C2mw" navigableOwnedEnd="_8evrcWTEEeuCd-K6t4C2mw _8evrdGTEEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_8evrcWTEEeuCd-K6t4C2mw" name="idForces" type="_dAdKgGTCEeuCd-K6t4C2mw" association="_8evrcGTEEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8evrcmTEEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8evrc2TEEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_8evrdGTEEeuCd-K6t4C2mw" name="idForce_Constants" type="_2ylr0GTCEeuCd-K6t4C2mw" association="_8evrcGTEEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8evrdWTEEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8evrdmTEEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UIinQGTFEeuCd-K6t4C2mw" memberEnd="_UIinQWTFEeuCd-K6t4C2mw _UIinRGTFEeuCd-K6t4C2mw" navigableOwnedEnd="_UIinQWTFEeuCd-K6t4C2mw _UIinRGTFEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_UIinQWTFEeuCd-K6t4C2mw" name="idForces" type="_dAdKgGTCEeuCd-K6t4C2mw" association="_UIinQGTFEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UIinQmTFEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UIinQ2TFEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_UIinRGTFEeuCd-K6t4C2mw" name="idForce_Drags" type="_5jefEGTCEeuCd-K6t4C2mw" association="_UIinQGTFEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UIinRWTFEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UIinRmTFEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_b2HW8GTFEeuCd-K6t4C2mw" memberEnd="_b2HW8WTFEeuCd-K6t4C2mw _b2HW9GTFEeuCd-K6t4C2mw" navigableOwnedEnd="_b2HW8WTFEeuCd-K6t4C2mw _b2HW9GTFEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_b2HW8WTFEeuCd-K6t4C2mw" name="idForces" type="_dAdKgGTCEeuCd-K6t4C2mw" association="_b2HW8GTFEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b2HW8mTFEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b2HW82TFEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_b2HW9GTFEeuCd-K6t4C2mw" name="idForce_Fields" type="_8xxnEGTCEeuCd-K6t4C2mw" association="_b2HW8GTFEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b2HW9WTFEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b2HW9mTFEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3duzMGTFEeuCd-K6t4C2mw" memberEnd="_3duzMWTFEeuCd-K6t4C2mw _3duzNGTFEeuCd-K6t4C2mw" navigableOwnedEnd="_3duzMWTFEeuCd-K6t4C2mw _3duzNGTFEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_3duzMWTFEeuCd-K6t4C2mw" name="idPhysics_Bases" type="_-EaToGTCEeuCd-K6t4C2mw" association="_3duzMGTFEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3duzMmTFEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3duzM2TFEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_3duzNGTFEeuCd-K6t4C2mw" name="idPhysicss" type="_cA8qwGTBEeuCd-K6t4C2mw" association="_3duzMGTFEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3duzNWTFEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3duzNmTFEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_74d5IGTFEeuCd-K6t4C2mw" memberEnd="_74d5IWTFEeuCd-K6t4C2mw _74d5JGTFEeuCd-K6t4C2mw" navigableOwnedEnd="_74d5IWTFEeuCd-K6t4C2mw _74d5JGTFEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_74d5IWTFEeuCd-K6t4C2mw" name="idPhysics_Bases" type="_-EaToGTCEeuCd-K6t4C2mw" association="_74d5IGTFEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_74d5ImTFEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_74d5I2TFEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_74d5JGTFEeuCd-K6t4C2mw" name="idEntitys" type="_FvpL4GTBEeuCd-K6t4C2mw" association="_74d5IGTFEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_74d5JWTFEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_74d5JmTFEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bQ0cEGTGEeuCd-K6t4C2mw" memberEnd="_bQ0cEWTGEeuCd-K6t4C2mw _bQ0cFGTGEeuCd-K6t4C2mw" navigableOwnedEnd="_bQ0cEWTGEeuCd-K6t4C2mw _bQ0cFGTGEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_bQ0cEWTGEeuCd-K6t4C2mw" name="cForcePushs" type="__GzkwGTCEeuCd-K6t4C2mw" association="_bQ0cEGTGEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bQ0cEmTGEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bQ0cE2TGEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_bQ0cFGTGEeuCd-K6t4C2mw" name="idPhysics_Players" type="_AbOaAGTDEeuCd-K6t4C2mw" association="_bQ0cEGTGEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bQ0cFWTGEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bQ0cFmTGEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dCfOAGTGEeuCd-K6t4C2mw" memberEnd="_dCf1EGTGEeuCd-K6t4C2mw _dCf1E2TGEeuCd-K6t4C2mw" navigableOwnedEnd="_dCf1EGTGEeuCd-K6t4C2mw _dCf1E2TGEeuCd-K6t4C2mw">
+    <ownedEnd xmi:id="_dCf1EGTGEeuCd-K6t4C2mw" name="cForcePushs" type="__GzkwGTCEeuCd-K6t4C2mw" association="_dCfOAGTGEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dCf1EWTGEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dCf1EmTGEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_dCf1E2TGEeuCd-K6t4C2mw" name="idForces" type="_dAdKgGTCEeuCd-K6t4C2mw" association="_dCfOAGTGEeuCd-K6t4C2mw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dCf1FGTGEeuCd-K6t4C2mw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dCf1FWTGEeuCd-K6t4C2mw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
